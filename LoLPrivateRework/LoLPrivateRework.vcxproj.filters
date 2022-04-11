@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{ed29a15e-5a70-4ca0-846e-71d0cf1f6c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay">
+      <UniqueIdentifier>{1802f739-fbed-46c6-9c2c-f93b2e128864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Champions">
+      <UniqueIdentifier>{16c72d4a-5d53-4aca-96ff-c282b3ced701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Obfuscation">
+      <UniqueIdentifier>{9be833fb-b590-4228-8440-aa7b42798829}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Overlay\Menu.cpp">
+      <Filter>Overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlay\Settings.cpp">
+      <Filter>Overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\CDTracker.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Engine.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Evade.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Prediction.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\RecallTracker.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TargetList.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TargetSelector.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Utility.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Brand.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Caitlyn.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Cassiopeia.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Darius.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Evelynn.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Ezreal.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Fiora.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Gangplank.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Graves.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Jax.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Jhin.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Kalista.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Karthus.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Kayle.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Lissandra.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Lucian.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Lulu.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Olaf.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Orianna.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Rengar.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Riven.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Ryze.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Thresh.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Twitch.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Vayne.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Viktor.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Vladimir.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Xerath.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\XinZhao.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Yasuo.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Zilean.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Xayah.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\KogMaw.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Offsets.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\SpellDataBase.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Annie.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Lux.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Janna.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Champions\Talon.cpp">
+      <Filter>Game\Champions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Overlay\Menu.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlay\Settings.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\CDTracker.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Engine.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Evade.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Offsets.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Prediction.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\RecallTracker.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\SpellDataBase.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TargetList.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TargetSelector.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Utility.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Brand.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Caitlyn.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Cassiopeia.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\ChampionIncludes.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Champions.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Darius.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Evelynn.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Ezreal.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Fiora.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Gangplank.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Graves.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Jax.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Jhin.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Kalista.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Karthus.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Kayle.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Lissandra.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Lucian.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Lulu.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Olaf.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Orianna.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Rengar.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Riven.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Ryze.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Thresh.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Twitch.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Vayne.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Viktor.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Vladimir.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Xerath.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\XinZhao.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Yasuo.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Zilean.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameIncludes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Xayah.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\KogMaw.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\Indexes.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\Inline.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\Log.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\MetaFSM.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\MetaRandom.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\MetaString.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\ObfuscatedCall.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\ObfuscatedCallWithPredicate.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation\Unroller.h">
+      <Filter>Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscation.h" />
+    <ClInclude Include="Game\Champions\Annie.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Lux.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Janna.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Champions\Talon.h">
+      <Filter>Game\Champions</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

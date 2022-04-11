@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F399A8D6-3E02-4725-A533-6C744C8D5045}</ProjectGuid>
+    <RootNamespace>LoLPrivateRework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK\Lib\x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GENERICDX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <Profile />
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>crt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateMapFile>false</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\CDTracker.cpp" />
+    <ClCompile Include="Game\Champions\Annie.cpp" />
+    <ClCompile Include="Game\Champions\Brand.cpp" />
+    <ClCompile Include="Game\Champions\Caitlyn.cpp" />
+    <ClCompile Include="Game\Champions\Cassiopeia.cpp" />
+    <ClCompile Include="Game\Champions\Darius.cpp" />
+    <ClCompile Include="Game\Champions\Evelynn.cpp" />
+    <ClCompile Include="Game\Champions\Ezreal.cpp" />
+    <ClCompile Include="Game\Champions\Fiora.cpp" />
+    <ClCompile Include="Game\Champions\Gangplank.cpp" />
+    <ClCompile Include="Game\Champions\Graves.cpp" />
+    <ClCompile Include="Game\Champions\Janna.cpp" />
+    <ClCompile Include="Game\Champions\Jax.cpp" />
+    <ClCompile Include="Game\Champions\Jhin.cpp" />
+    <ClCompile Include="Game\Champions\Kalista.cpp" />
+    <ClCompile Include="Game\Champions\Karthus.cpp" />
+    <ClCompile Include="Game\Champions\Kayle.cpp" />
+    <ClCompile Include="Game\Champions\KogMaw.cpp" />
+    <ClCompile Include="Game\Champions\Lissandra.cpp" />
+    <ClCompile Include="Game\Champions\Lucian.cpp" />
+    <ClCompile Include="Game\Champions\Lulu.cpp" />
+    <ClCompile Include="Game\Champions\Lux.cpp" />
+    <ClCompile Include="Game\Champions\Olaf.cpp" />
+    <ClCompile Include="Game\Champions\Orianna.cpp" />
+    <ClCompile Include="Game\Champions\Rengar.cpp" />
+    <ClCompile Include="Game\Champions\Riven.cpp" />
+    <ClCompile Include="Game\Champions\Ryze.cpp" />
+    <ClCompile Include="Game\Champions\Talon.cpp" />
+    <ClCompile Include="Game\Champions\Thresh.cpp" />
+    <ClCompile Include="Game\Champions\Twitch.cpp" />
+    <ClCompile Include="Game\Champions\Vayne.cpp" />
+    <ClCompile Include="Game\Champions\Viktor.cpp" />
+    <ClCompile Include="Game\Champions\Vladimir.cpp" />
+    <ClCompile Include="Game\Champions\Xayah.cpp" />
+    <ClCompile Include="Game\Champions\Xerath.cpp" />
+    <ClCompile Include="Game\Champions\XinZhao.cpp" />
+    <ClCompile Include="Game\Champions\Yasuo.cpp" />
+    <ClCompile Include="Game\Champions\Zilean.cpp" />
+    <ClCompile Include="Game\Engine.cpp" />
+    <ClCompile Include="Game\Evade.cpp" />
+    <ClCompile Include="Game\Offsets.cpp" />
+    <ClCompile Include="Game\Prediction.cpp" />
+    <ClCompile Include="Game\RecallTracker.cpp" />
+    <ClCompile Include="Game\SpellDataBase.cpp" />
+    <ClCompile Include="Game\TargetList.cpp" />
+    <ClCompile Include="Game\TargetSelector.cpp" />
+    <ClCompile Include="Game\Utility.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Overlay\Menu.cpp" />
+    <ClCompile Include="Overlay\Settings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\CDTracker.h" />
+    <ClInclude Include="Game\Champions\Annie.h" />
+    <ClInclude Include="Game\Champions\Brand.h" />
+    <ClInclude Include="Game\Champions\Caitlyn.h" />
+    <ClInclude Include="Game\Champions\Cassiopeia.h" />
+    <ClInclude Include="Game\Champions\ChampionIncludes.h" />
+    <ClInclude Include="Game\Champions\Champions.h" />
+    <ClInclude Include="Game\Champions\Darius.h" />
+    <ClInclude Include="Game\Champions\Evelynn.h" />
+    <ClInclude Include="Game\Champions\Ezreal.h" />
+    <ClInclude Include="Game\Champions\Fiora.h" />
+    <ClInclude Include="Game\Champions\Gangplank.h" />
+    <ClInclude Include="Game\Champions\Graves.h" />
+    <ClInclude Include="Game\Champions\Janna.h" />
+    <ClInclude Include="Game\Champions\Jax.h" />
+    <ClInclude Include="Game\Champions\Jhin.h" />
+    <ClInclude Include="Game\Champions\Kalista.h" />
+    <ClInclude Include="Game\Champions\Karthus.h" />
+    <ClInclude Include="Game\Champions\Kayle.h" />
+    <ClInclude Include="Game\Champions\KogMaw.h" />
+    <ClInclude Include="Game\Champions\Lissandra.h" />
+    <ClInclude Include="Game\Champions\Lucian.h" />
+    <ClInclude Include="Game\Champions\Lulu.h" />
+    <ClInclude Include="Game\Champions\Lux.h" />
+    <ClInclude Include="Game\Champions\Olaf.h" />
+    <ClInclude Include="Game\Champions\Orianna.h" />
+    <ClInclude Include="Game\Champions\Rengar.h" />
+    <ClInclude Include="Game\Champions\Riven.h" />
+    <ClInclude Include="Game\Champions\Ryze.h" />
+    <ClInclude Include="Game\Champions\Talon.h" />
+    <ClInclude Include="Game\Champions\Thresh.h" />
+    <ClInclude Include="Game\Champions\Twitch.h" />
+    <ClInclude Include="Game\Champions\Vayne.h" />
+    <ClInclude Include="Game\Champions\Viktor.h" />
+    <ClInclude Include="Game\Champions\Vladimir.h" />
+    <ClInclude Include="Game\Champions\Xayah.h" />
+    <ClInclude Include="Game\Champions\Xerath.h" />
+    <ClInclude Include="Game\Champions\XinZhao.h" />
+    <ClInclude Include="Game\Champions\Yasuo.h" />
+    <ClInclude Include="Game\Champions\Zilean.h" />
+    <ClInclude Include="Game\Engine.h" />
+    <ClInclude Include="Game\Evade.h" />
+    <ClInclude Include="Game\GameIncludes.h" />
+    <ClInclude Include="Game\Offsets.h" />
+    <ClInclude Include="Game\Prediction.h" />
+    <ClInclude Include="Game\RecallTracker.h" />
+    <ClInclude Include="Game\SpellDataBase.h" />
+    <ClInclude Include="Game\TargetList.h" />
+    <ClInclude Include="Game\TargetSelector.h" />
+    <ClInclude Include="Game\Utility.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Obfuscation.h" />
+    <ClInclude Include="Obfuscation\Indexes.h" />
+    <ClInclude Include="Obfuscation\Inline.h" />
+    <ClInclude Include="Obfuscation\Log.h" />
+    <ClInclude Include="Obfuscation\MetaFSM.h" />
+    <ClInclude Include="Obfuscation\MetaRandom.h" />
+    <ClInclude Include="Obfuscation\MetaString.h" />
+    <ClInclude Include="Obfuscation\ObfuscatedCall.h" />
+    <ClInclude Include="Obfuscation\ObfuscatedCallWithPredicate.h" />
+    <ClInclude Include="Obfuscation\Unroller.h" />
+    <ClInclude Include="Overlay\Menu.h" />
+    <ClInclude Include="Overlay\Settings.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
